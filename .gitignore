@@ -1,0 +1,4 @@
+bin/charm_helpers_sync.py
+hooks/charmhelpers
+.coverage
+*.pyc

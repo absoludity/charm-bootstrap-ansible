@@ -1,0 +1,9 @@
+branch: lp:charm-helpers
+destination: hooks/charmhelpers
+include:
+    - core
+    - fetch
+    - contrib.ansible|inc=*
+    # XXX REMOVE saltstack once ch branch lands.
+    - contrib.saltstack|inc=*
+    - contrib.templating.contexts
