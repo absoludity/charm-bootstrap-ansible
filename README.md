@@ -16,7 +16,7 @@ Take a look around at the hooks/hooks.py or the playbooks/site.yaml,
 or deploy it with:
 
 ```
-$ juju deploy --repository=../.. charm-bootstrap-ansible
+$ juju deploy --repository=../.. local:charm-bootstrap-ansible
 ```
 
 If you'd like to explore what's happening when the hooks run,
