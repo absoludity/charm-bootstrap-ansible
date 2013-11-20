@@ -24,14 +24,14 @@ once juju status tells you that the services has 'started', you can
 open another terminal up and run
 
 ```
-juju debug-hooks charm-bootstrap-ansible/0
+$ juju debug-hooks charm-bootstrap-ansible/0
 ```
 
 Back in your original terminal, let's change one of the config
 options (defined in the config.yaml):
 
 ```
-juju set charm-bootstrap-ansible string-option="Hi there!"
+$ juju set charm-bootstrap-ansible string-option="Hi there"
 ```
 
 Back in your debug-hooks terminal, you'll see the prompt
@@ -44,7 +44,8 @@ $ hooks/config-changed
 
 You'll see the output of ansible running all the tasks tagged with
 'config-changed', including a debug message with the value of
-the config option that you changed.
+the config option that you changed. Just 'exit' to let juju know
+the hook execution has finished.
 
 Have fun exploring the possibilities of ansible and juju!
 
