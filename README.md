@@ -19,10 +19,31 @@ or deploy it with:
 $ juju deploy --repository=../.. local:charm-bootstrap-ansible
 ```
 
-TODO:
------
- * Add metadata and test deploy
- * Add template with example in configur hook.
- * Update playbook to demo common things (ie. code on server etc.)
+If you'd like to explore what's happening when the hooks run,
+once juju status tells you that the services has 'started', you can
+open another terminal up and run
+
+```
+juju debug-hooks charm-bootstrap-ansible/0
+```
+
+Back in your original terminal, let's change one of the config
+options (defined in the config.yaml):
+
+```
+juju set charm-bootstrap-ansible string-option="Hi there!"
+```
+
+When you switch back to the second terminal, you'll see the prompt
+has changed to let you know it's ready to run the config-changed
+hook. Run the hook to see what it does with:
+
+```
+hooks/config-changed
+```
+
+You'll see the output of ansible running all the tasks tagged with
+'config-changed', including a debug message with the value of
+the config option that you changed.
 
 [1]: http://ansibleworks.com/

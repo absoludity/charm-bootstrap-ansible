@@ -1,4 +1,4 @@
-branch: lp:charm-helpers
+branch: lp:~michael.nelson/charm-helpers/missing-import-for-ansible-helpers
 destination: hooks/charmhelpers
 include:
     - core

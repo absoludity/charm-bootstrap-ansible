@@ -19,7 +19,12 @@
         - config-changed
 
     - name: Start service
-      debug: msg="You'd start some service here."
+      debug: msg="You'd start some service here. The config 'string-option' has the value '{{ string_option }}'"
+      tags:
+        - start
+        - config-changed
 
     - name: Stop service
-      debug: msg="You'd stop some service here."
+      debug: msg="You'd stop some service here. The config 'string-option' is '{{ string_option }}'"
+      tags:
+        - stop
