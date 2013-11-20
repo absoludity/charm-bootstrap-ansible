@@ -4,6 +4,4 @@ include:
     - core
     - fetch
     - contrib.ansible|inc=*
-    # XXX REMOVE saltstack once ch branch lands.
-    - contrib.saltstack|inc=*
     - contrib.templating.contexts

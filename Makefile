@@ -1,6 +1,8 @@
 #!/usr/bin/make
 PYTHON := /usr/bin/env python
 
+build: sync-charm-helpers test
+
 lint:
 	@flake8 --exclude hooks/charmhelpers --ignore=E125 hooks
 	@flake8 --exclude hooks/charmhelpers --ignore=E125 unit_tests
