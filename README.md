@@ -1,8 +1,14 @@
 charm-bootstrap-ansible
 =======================
 
-A quick way to get started creating a juju charm using
-ansible. Make sure you have both git and bzr installed and then:
+A quick way to get started creating a [juju][1] charm using
+[ansible][2].
+
+Disclaimer: this template does not try to explain what's possible with
+either ansible or juju - but if you know a bit about both, it will
+show you how you can easily use them together.
+
+Make sure you have both git and bzr installed and then:
 
 ```
 $ mkdir -p charms/precise && cd charms/precise
@@ -49,4 +55,5 @@ the hook execution has finished.
 
 Have fun exploring the possibilities of ansible and juju!
 
-[1]: http://ansibleworks.com/
+[1]: http://juju.ubuntu.com/
+[2]: http://ansibleworks.com/
