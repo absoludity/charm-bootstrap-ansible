@@ -2,7 +2,7 @@ charm-bootstrap-ansible
 =======================
 
 A quick way to get started creating a juju charm using
-ansible:
+ansible. Make sure you have both git and bzr installed and then:
 
 ```
 $ mkdir -p charms/precise && cd charms/precise
