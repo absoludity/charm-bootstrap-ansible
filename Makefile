@@ -23,3 +23,6 @@ deploy:
 	@echo Deploying charm-bootstrap-ansible template.
 	@juju deploy --repository=../.. local:charm-bootstrap-ansible
 	@echo See the README for explorations after deploying.
+
+python-tools:
+	@apt-get install python python-nose python-mock python-flake8
