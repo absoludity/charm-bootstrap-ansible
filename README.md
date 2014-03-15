@@ -14,7 +14,6 @@ Make sure you have both git and bzr installed and then:
 $ mkdir -p charms/precise && cd charms/precise
 $ git clone https://github.com/absoludity/charm-bootstrap-ansible.git mycharm
 $ cd mycharm
-$ sudo make python-tools
 $ make
 ```
 
