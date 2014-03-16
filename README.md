@@ -55,5 +55,18 @@ the hook execution has finished.
 
 Have fun exploring the possibilities of ansible and juju!
 
+### Note about Dependencies
+The makefile to run tests requires the following dependencies
+
+- python-nose
+- python-mock
+- python-flake8
+
+installable via: 
+
+```
+$ sudo apt-get install python-nose python-mock python-flake8
+```
+
 [1]: http://juju.ubuntu.com/
 [2]: http://ansibleworks.com/
