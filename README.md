@@ -61,11 +61,13 @@ The makefile to run tests requires the following dependencies
 - python-nose
 - python-mock
 - python-flake8
+- python-yaml
+- bzr
 
 installable via: 
 
 ```
-$ sudo apt-get install python-nose python-mock python-flake8
+$ sudo apt-get install bzr python-yaml python-nose python-mock python-flake8
 ```
 
 [1]: http://juju.ubuntu.com/
